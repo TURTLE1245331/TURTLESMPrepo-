@@ -1,3 +1,51 @@
+@media (max-width: 900px) {
+    /* Hero Bereich: Text und Bild untereinander */
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        padding: 40px 20px;
+        order: 2; /* Text kommt nach dem Bild */
+    }
+
+    .hero-image {
+        order: 1; /* Bild kommt zuerst auf dem Handy */
+        height: 300px; /* Begrenzt die Höhe des Logos auf dem Handy */
+    }
+
+    .hero-text h1 {
+        font-size: 40px; /* Kleinere Schrift für Handys */
+    }
+
+    /* Galerie: Aus 4 Spalten werden 2 Spalten */
+    .image-mitte {
+        flex-wrap: wrap; /* Erlaubt das Umbrechen der Bilder */
+        justify-content: center;
+    }
+
+    .image-container {
+        flex: 1 1 40%; /* Nimmt etwa die Hälfte der Breite ein */
+        min-width: 150px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Galerie: Auf ganz kleinen Handys alles untereinander */
+    .image-container {
+        flex: 1 1 100%; /* Volle Breite für jedes Bild */
+    }
+    
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .description {
+        max-width: 100%; /* Text nutzt die volle Breite */
+    }
+}
+
 @import url(https://db.onlinewebfonts.com/c/182b97a2af5abc03e28a638677d667c4?family=Roca+Two+Bold);
 @import url('https://fonts.cdnfonts.com/css/open-sauce-one');
 
@@ -158,4 +206,11 @@ body {
   font-size: 1.2rem;
   text-align: center;
   color: #eee6d8;
+}
+.image-container p {
+    font-size: 0.9rem;
+    color: #eee6d8;
+    line-height: 1.4;
+    text-align: center;
+    font-family: "Open Sauce One" , serif;
 }
