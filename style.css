@@ -79,10 +79,11 @@
   text-decoration: none;
   font-weight: 900;
   transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
-  margin-bottom: 10px;
+  margin-top: 10px;
   width: fit-content;
   margin-right: 15px;
   margin-bottom: 15px;
+
 }
 
 .zyversebutton:before {
