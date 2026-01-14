@@ -57,7 +57,7 @@
     url("https://db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.woff")format("woff"),
     url("https://db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.svg#Roca Two Bold")format("svg");
-/* From Uiverse.io by cssbuttons-io */ 
+    /* From Uiverse.io by cssbuttons-io */ 
 }
 .zyversebutton {
   font-size: 18px;
@@ -80,6 +80,9 @@
   font-weight: 900;
   transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
   margin-bottom: 10px;
+  width: fit-content;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .zyversebutton:before {
@@ -207,8 +210,8 @@ body {
 }
 
 .mitte-text h2 {
-  font-family: "Open Sauce One";
-  font-size: 15px;
+  font-family: "Roca Two Bold";
+  font-size: 20px;
   line-height: 1.1;
   margin: 20px 0;
 }
@@ -258,64 +261,63 @@ body {
     font-family: "Open Sauce One" , serif;
 }
 
-/* From Uiverse.io by vinodjangid07 */ 
-.Btn {
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: transparent;
-  position: relative;
-  /* overflow: hidden; */
-  border-radius: 7px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.svgContainer {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  backdrop-filter: blur(0px);
-  letter-spacing: 0.8px;
-  border-radius: 10px;
-  transition: all 0.3s;
-  border: 1px solid rgba(156, 156, 156, 0.466);
-}
-
-.BG {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: #7289da;
-  z-index: -1;
-  border-radius: 10px;
-  pointer-events: none;
-  transition: all 0.3s;
-}
-
-.Btn:hover .BG {
-  transform: rotate(35deg);
-  transform-origin: bottom;
-}
-
-.Btn:hover .svgContainer {
-  border: 1px solid rgba(206, 206, 206, 0.466);
-  background-color: rgba(214, 214, 214, 0.466);
-  backdrop-filter: blur(4px);
-}
-
-
-
 .belohnungen h2{
   font-family: "Roca Two Bold" , serif;
   font-size: 40px;
   line-height: 1.3;
   margin: 10px 0;;
+}
+
+.belohnungen p{
+  font-family: "Open Sauce One" , serif;
+  font-size: 15px;
+  line-height: 1.3;
+  margin: 10px 0;;
+}
+
+.belohnungen {
+  background: #6b6a45;
+  color: #eee6d8;
+
+  padding: 60px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.kontaktdaten-text p{
+  font-family: "Open Sauce One" , serif;
+  font-size: 15px;
+  line-height: 1.3;
+  margin: 10px 0;;
+}
+.kontaktdaten {
+  background: #6b6a45;
+  color: #eee6d8;
+
+  padding: 60px;
+  padding-top: 60px;
+  display: grid;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.kontaktdaten-text h2{
+  font-family: "Roca Two Bold" , serif;
+  font-size: 40px;
+  line-height: 1.3;
+  margin: 10px 0;;
+}
+.kontaktdaten-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;           /* Passt zu deinem Minecraft-Look */
+    object-fit: cover;
+  
 }
