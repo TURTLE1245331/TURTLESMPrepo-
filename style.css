@@ -58,7 +58,13 @@
     url("https://db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.svg#Roca Two Bold")format("svg");
     /* From Uiverse.io by cssbuttons-io */ 
+
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 .zyversebutton {
   font-size: 18px;
   background-color: #008542;
@@ -386,4 +392,114 @@ body {
 
 .copy-ip:active {
     transform: scale(0.95);
+}
+
+/* Die Haupt-Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4a492f;
+    height: 90px;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Definition der drei Sektionen */
+.nav-section {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Alle Sektionen sind gleich breit */
+}
+
+.nav-section.left {
+    justify-content: flex-start;
+}
+
+.nav-section.center {
+    justify-content: center;
+}
+
+.nav-section.right {
+    justify-content: flex-end;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+/* Mittlere Links */
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #eee6d8;
+    font-family: "Open Sauce One", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #23c483;
+}
+
+/* Spieler-Pille rechts */
+.player-count {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 8px 16px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    min-width: 150px;
+    transition: background 0.3s ease;
+}
+
+.player-count:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 12px;
+    background-color: #777; /* Grau wenn offline */
+    flex-shrink: 0;
+}
+
+.status-dot.online {
+    background-color: #23c483;
+    box-shadow: 0 0 10px #23c483;
+}
+
+.player-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+    font-family: "Open Sauce One", sans-serif;
+}
+
+.small-label {
+    font-size: 10px;
+    color: #eee6d8;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+#player-count-num {
+    font-size: 14px;
+    color: #23c483;
+    font-weight: bold;
 }
