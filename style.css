@@ -367,3 +367,23 @@ body {
     margin-top: 10px; /* Gleicher Abstand wie bei deinen anderen Sektionen */
     font-family: "Open Sauce One", sans-serif;
 }
+
+.copy-ip {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2px 8px;
+    border-radius: 4px;
+    cursor: pointer; /* Zeigt die Hand beim Drüberfahren */
+    color: #23c483;  /* Deine grüne Akzentfarbe */
+    font-weight: bold;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.copy-ip:hover {
+    background: rgba(35, 196, 131, 0.2);
+    transform: scale(1.05);
+}
+
+.copy-ip:active {
+    transform: scale(0.95);
+}
