@@ -322,3 +322,48 @@ body {
     object-fit: cover;
   
 }
+
+.infoservertext h2 {
+  font-family: "Roca Two Bold" , serif;
+  font-size: 40px;
+  line-height: 1.3;
+  margin: 0 0 10px 0;
+}
+
+.infoservertext p {
+  font-family: "Open Sauce One" , serif;
+  font-size: 15px;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.infoserver {
+  background: #6b6a45;
+  color: #eee6d8;
+
+  padding: 60px;
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.infoserverimage img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;           /* Passt zu deinem Minecraft-Look */
+    display: block;
+}
+
+.footertext {
+    background-color: #4a492f; /* Ein etwas dunkleres Grün-Braun */
+    color: #eee6d8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px; /* Gleicher Abstand wie bei deinen anderen Sektionen */
+    font-family: "Open Sauce One", sans-serif;
+}
