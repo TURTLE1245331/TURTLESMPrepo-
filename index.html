@@ -57,11 +57,6 @@
             console.error("API Fehler:", error);
         }
     }
-
-    function copyIp() {
-        navigator.clipboard.writeText('zyverse.de');
-    }    
-
     // Sofort beim Laden ausführen
     updatePlayerCount();
 
@@ -172,7 +167,8 @@
               Server Infos:
         </h2>
         <p>
-            IP: <span class="copy-ip" onclick="copyIp()" title="Klicken zum Kopieren">zyverse.de</span><br>
+            <button class="copy-ip" title="Klicke zum kopieren" data-success-title="Kopiert!">zyverse.de</button>
+            <br>
             Version: 1.21.10<br>
         </p>    
         <p>
@@ -194,3 +190,4 @@
 </body>
 
 </html>
+
