@@ -58,6 +58,10 @@
         }
     }
 
+    function copyIp() {
+        navigator.clipboard.writeText('zyverse.de');
+    }    
+
     // Sofort beim Laden ausführen
     updatePlayerCount();
 
@@ -168,7 +172,7 @@
               Server Infos:
         </h2>
         <p>
-            IP: <span class="copy-ip" onclick="copyIP('zyverse.de')" title="Klicken zum Kopieren">zyverse.de</span><br>
+            IP: <span class="copy-ip" onclick="copyIp()" title="Klicken zum Kopieren">zyverse.de</span><br>
             Version: 1.21.10<br>
         </p>    
         <p>
@@ -188,4 +192,5 @@
 </footer>
 
 </body>
+
 </html>
