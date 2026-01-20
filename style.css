@@ -551,3 +551,42 @@ body {
     color: #23c483;
     font-weight: bold;
 }
+
+
+/* Screenshots Section */
+.screenshots-section {
+    background: #6b6a45;
+    color: #eee6d8;
+    padding: 60px;
+    margin-top: 10px;
+}
+
+.überschrift {
+  background: #6b6a45;
+  color: #eee6d8;
+  padding: 60px;
+  margin-top: 10px;
+}
+
+.überschrift h1 {
+    font-family: "Roca Two Bold", serif;
+    font-size: 40px;
+    line-height: 1.3;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.überschrift p {
+    font-family: "Open Sauce One", serif;
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.screenshots-section {
+    background: #6b6a45;
+    color: #eee6d8;
+    padding: 60px;
+    margin-top: 10px;
+}

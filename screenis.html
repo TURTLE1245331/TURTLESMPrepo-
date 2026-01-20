@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="https://db.onlinewebfonts.com/c/182b97a2af5abc03e28a638677d667c4?family=Roca+Two+Bold" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/open-sauce-one" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="serverimg.png">
+    <title>TurtleSMP Screenshots</title>
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-left">
+        <div class="logo">
+            <img src="serverimg.png" alt="TurtleSMP Logo">
+        </div>
+    </div>
+
+    <div class="nav-center">
+        <div class="nav-links">
+            <a href="#werwirsind">Wer wir sind</a>
+            <a href="#belohnungen">Belohnungen</a>
+            <a href="#kontaktdaten">Kontaktdaten</a>
+            <a href="#infoserver">Server Infos</a>
+        </div>
+    </div>
+
+    <div class="nav-right">
+        <div class="player-count" onclick="copyIP()">
+            <span class="status-dot" id="stat-dot"></span>
+            <div class="player-text">
+                <span class="small-label">Spieler online:</span>
+                <span id="player-count-num">0 / 150</span>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    async function updatePlayerCount() {
+        const ip = "zyverse.de";
+        const display = document.getElementById('player-count');
+
+        try {
+            const response = await fetch(`https://api.mcsrvstat.us/3/${ip}`);
+            const data = await response.json();
+
+            if (data.online) {
+                // Zeigt "Spieler aktuell / Max Spieler" an
+                display.innerText = `${data.players.online} / ${data.players.max}`;
+                display.style.color = "#23c483"; // Ein schönes Grün, wenn online
+            } else {
+                display.innerText = "Offline";
+                display.style.color = "#ff4d4d"; // Rot, wenn offline
+            }
+        } catch (error) {
+            display.innerText = "Fehler beim Laden";
+            console.error("API Fehler:", error);
+        }
+    }
+    // Sofort beim Laden ausführen
+    updatePlayerCount();
+
+    // Optional: Alle 60 Sekunden automatisch aktualisieren
+    setInterval(updatePlayerCount, 60000);
+</script>
+
+
+<section class="überschrift">
+    <h1>Screenshots von TurtleSMP</h1>
+    <p> Hier seht ihr einige Screenshots von unserem Server </p>
+</section>
+    
+    
+    
+    
+    
+    
+    <section class="screenshots-section">
+        <h2> Spawn Bereich </h2>
+        <p> Das ist unser Spawn Bereich </p>
+        <img src="hub.png" alt="Spawn Screenshot">
+        <p> Hier startet jeder Spieler sein Abenteuer </p>
+    
+    <div class="screenshots">
+        <h2> Lobby und Casino </h2>
+        <p> Das ist unsere Lobby </p>
+        <img src="" alt="Lobby Screenshot">
+        <p> und unser Casino um sein Geld loszuwerden</p>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footertext">
+    <p>© 2026 TurtleSMP | NICHT MIT MOJANG ODER MICROSOFT VERBUNDEN | Made by hand with love ❤️</p>
+</footer>
+
+</body>
+
+</html>
+
