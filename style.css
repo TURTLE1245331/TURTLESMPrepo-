@@ -646,18 +646,18 @@ body {
   src: local('Minecraft'), url('https://fonts.cdnfonts.com/s/36662/MinecraftTen-VGORe.woff') format('woff');
 }
 
-
-.casino-bild {
-  background: #6b6a45;
-  color: #eee6d8;
-  padding: 60px;
-  margin-top: 10px;
-}
-
 .casino-bild-container {
   width: 100%;
+  overflow: visible;
+  text-align: center;
+}
+
+
+.casino-bild img {
+  width: 150%;
+  max-width: none;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
