@@ -1,112 +1,127 @@
 /* --- SMARTPHONE OPTIMIERUNG --- */
 
 @media (max-width: 900px) {
-    /* Navbar Anpassung */
-    .navbar {
-        flex-direction: column; /* Logo oben, Links mitte, Spieler unten */
-        height: auto;
-        padding: 15px 20px;
-        gap: 15px;
-    }
 
-    .nav-section {
-        justify-content: center !important; /* Alles mittig auf dem Handy */
-        width: 100%;
-    }
+  /* Navbar Anpassung */
+  .navbar {
+    flex-direction: column;
+    /* Logo oben, Links mitte, Spieler unten */
+    height: auto;
+    padding: 15px 20px;
+    gap: 15px;
+  }
 
-    .nav-links {
-        gap: 15px;
-        flex-wrap: wrap; /* Erlaubt Umbruch der Links */
-        justify-content: center;
-    }
+  .nav-section {
+    justify-content: center !important;
+    /* Alles mittig auf dem Handy */
+    width: 100%;
+  }
 
-    /* Sektionen von 2 Spalten auf 1 Spalte umstellen */
-    .hero, 
-    .kontaktdaten, 
-    .infoserver {
-        grid-template-columns: 1fr; /* Nur noch eine Spalte */
-        padding: 40px 20px; /* Weniger Abstand an den Seiten */
-        text-align: center; /* Text mittig für bessere Optik auf Mobilgeräten */
-    }
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    /* Erlaubt Umbruch der Links */
+    justify-content: center;
+  }
 
-    /* Bilder unter den Text schieben */
-    .hero-image,
-    .kontaktdaten-image,
-    .infoserverimage {
-        order: 2; /* Bild kommt nach dem Text */
-    }
+  /* Sektionen von 2 Spalten auf 1 Spalte umstellen */
+  .hero,
+  .kontaktdaten,
+  .infoserver {
+    grid-template-columns: 1fr;
+    /* Nur noch eine Spalte */
+    padding: 40px 20px;
+    /* Weniger Abstand an den Seiten */
+    text-align: center;
+    /* Text mittig für bessere Optik auf Mobilgeräten */
+  }
 
-    .hero-text,
-    .kontaktdaten-text,
-    .infoservertext {
-        order: 1; /* Text kommt zuerst */
-        padding: 0;
-    }
+  /* Bilder unter den Text schieben */
+  .hero-image,
+  .kontaktdaten-image,
+  .infoserverimage {
+    order: 2;
+    /* Bild kommt nach dem Text */
+  }
 
-    /* Überschriften verkleinern */
-    .hero-text h1 {
-        font-size: 38px;
-    }
+  .hero-text,
+  .kontaktdaten-text,
+  .infoservertext {
+    order: 1;
+    /* Text kommt zuerst */
+    padding: 0;
+  }
 
-    .belohnungen h2,
-    .kontaktdaten-text h2,
-    .infoservertext h2 {
-        font-size: 30px;
-    }
+  /* Überschriften verkleinern */
+  .hero-text h1 {
+    font-size: 38px;
+  }
 
-    /* Buttons mittig ausrichten */
-    .zyversebutton {
-        margin: 10px auto;
-        display: block; /* Button nimmt eigene Zeile ein */
-    }
+  .belohnungen h2,
+  .kontaktdaten-text h2,
+  .infoservertext h2 {
+    font-size: 30px;
+  }
 
-    .description {
-        max-width: 100%; /* Text nutzt volle Breite */
-        margin: 0 auto;
-    }
+  /* Buttons mittig ausrichten */
+  .zyversebutton {
+    margin: 10px auto;
+    display: block;
+    /* Button nimmt eigene Zeile ein */
+  }
+
+  .description {
+    max-width: 100%;
+    /* Text nutzt volle Breite */
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 600px) {
-    /* Galerie (Belohnungen/Features) */
-    .image-mitte {
-        flex-direction: column; /* Bilder untereinander */
-        align-items: center;
-        padding: 20px;
-    }
 
-    .image-container {
-        width: 100%;
-        margin-bottom: 30px;
-    }
+  /* Galerie (Belohnungen/Features) */
+  .image-mitte {
+    flex-direction: column;
+    /* Bilder untereinander */
+    align-items: center;
+    padding: 20px;
+  }
 
-    .navbar {
-        padding: 10px;
-    }
+  .image-container {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 
-    .nav-links a {
-        font-size: 13px; /* Etwas kleinere Schrift in der Navbar */
-    }
-    
-    .player-count {
-        min-width: unset; /* Pille wird schmaler */
-        width: 100%;
-        justify-content: center;
-    }
+  .navbar {
+    padding: 10px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    /* Etwas kleinere Schrift in der Navbar */
+  }
+
+  .player-count {
+    min-width: unset;
+    /* Pille wird schmaler */
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 @import url(https://db.onlinewebfonts.com/c/182b97a2af5abc03e28a638677d667c4?family=Roca+Two+Bold);
-@import url('https://fonts.cdnfonts.com/css/open-sauce-one');´
+@import url('https://fonts.cdnfonts.com/css/open-sauce-one');
 @import url('https://fonts.cdnfonts.com/css/minecraft-4');
 
 @font-face {
-    font-family: "Roca Two Bold";
-    src: url("https://db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.eot");
-    src: url("https://db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.eot?#iefix")format("embedded-opentype"),
+  font-family: "Roca Two Bold";
+  src: url("https://db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.eot");
+  src: url("https://db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.eot?#iefix")format("embedded-opentype"),
     url("https://db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.woff2")format("woff2"),
     url("https://db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.woff")format("woff"),
     url("https://db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/182b97a2af5abc03e28a638677d667c4.svg#Roca Two Bold")format("svg");
-    /* From Uiverse.io by cssbuttons-io */ 
+  /* From Uiverse.io by cssbuttons-io */
 
 }
 
@@ -190,13 +205,15 @@ html {
 
 
 body {
-  background-color: #f3ead8;;
+  background-color: #f3ead8;
+  ;
 }
 
- .hero {
-  display: grid;;
+.hero {
+  display: grid;
+  ;
   grid-template-columns: 1fr 1fr;
- }
+}
 
 .hero-text {
   background: #6b6a45;
@@ -211,11 +228,10 @@ body {
 }
 
 .hero-text h1 {
-  font-family: "Minecraft" , cursive;
+  font-family: "Minecraft", cursive;
   font-size: 64px;
   line-height: 1.1;
   margin: 20px 0
-  
 }
 
 .small {
@@ -246,7 +262,7 @@ body {
 }
 
 .hero-text h2 {
-  font-family: "Open Sauce One" , serif;
+  font-family: "Open Sauce One", serif;
   font-size: 15px;
   line-height: 1.1;
   margin: 20px 0;
@@ -276,7 +292,8 @@ body {
   font-family: "Open Sauce One";
   font-size: 15px;
   line-height: 1.3;
-  margin: 10px 0;;
+  margin: 10px 0;
+  ;
 }
 
 .image-mitte {
@@ -303,32 +320,35 @@ body {
 }
 
 .image-container h3 {
-  font-family: "Open Sauce One" , serif;
+  font-family: "Open Sauce One", serif;
   margin: 10px 0 5px 0;
   font-size: 1.2rem;
   text-align: center;
   color: #eee6d8;
 }
+
 .image-container p {
-    font-size: 0.9rem;
-    color: #eee6d8;
-    line-height: 1.4;
-    text-align: center;
-    font-family: "Open Sauce One" , serif;
+  font-size: 0.9rem;
+  color: #eee6d8;
+  line-height: 1.4;
+  text-align: center;
+  font-family: "Open Sauce One", serif;
 }
 
-.belohnungen h2{
-  font-family: "Minecraft" , serif;
+.belohnungen h2 {
+  font-family: "Minecraft", serif;
   font-size: 40px;
   line-height: 1.3;
-  margin: 10px 0;;
+  margin: 10px 0;
+  ;
 }
 
-.belohnungen p{
-  font-family: "Open Sauce One" , serif;
+.belohnungen p {
+  font-family: "Open Sauce One", serif;
   font-size: 15px;
   line-height: 1.3;
-  margin: 10px 0;;
+  margin: 10px 0;
+  ;
 }
 
 .belohnungen {
@@ -343,12 +363,14 @@ body {
   margin-top: 10px;
 }
 
-.kontaktdaten-text p{
-  font-family: "Open Sauce One" , serif;
+.kontaktdaten-text p {
+  font-family: "Open Sauce One", serif;
   font-size: 15px;
   line-height: 1.3;
-  margin: 10px 0;;
+  margin: 10px 0;
+  ;
 }
+
 .kontaktdaten {
   background: #6b6a45;
   color: #eee6d8;
@@ -364,29 +386,32 @@ body {
   align-items: center;
 }
 
-.kontaktdaten-text h2{
-  font-family: "Minecraft" , serif;
+.kontaktdaten-text h2 {
+  font-family: "Minecraft", serif;
   font-size: 40px;
   line-height: 1.3;
-  margin: 10px 0;;
+  margin: 10px 0;
+  ;
 }
+
 .kontaktdaten-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;           /* Passt zu deinem Minecraft-Look */
-    object-fit: cover;
-  
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* Passt zu deinem Minecraft-Look */
+  object-fit: cover;
+
 }
 
 .infoservertext h2 {
-  font-family: "Minecraft" , serif;
+  font-family: "Minecraft", serif;
   font-size: 40px;
   line-height: 1.3;
   margin: 0 0 10px 0;
 }
 
 .infoservertext p {
-  font-family: "Open Sauce One" , serif;
+  font-family: "Open Sauce One", serif;
   font-size: 15px;
   line-height: 1.3;
   margin: 0;
@@ -408,158 +433,165 @@ body {
 }
 
 .infoserverimage img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;           /* Passt zu deinem Minecraft-Look */
-    display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* Passt zu deinem Minecraft-Look */
+  display: block;
 }
 
 .footertext {
-    background-color: #4a492f; /* Ein etwas dunkleres Grün-Braun */
-    color: #eee6d8;
-    text-align: center;
-    padding: 20px;
-    margin-top: 10px; /* Gleicher Abstand wie bei deinen anderen Sektionen */
-    font-family: "Open Sauce One", sans-serif;
+  background-color: #4a492f;
+  /* Ein etwas dunkleres Grün-Braun */
+  color: #eee6d8;
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+  /* Gleicher Abstand wie bei deinen anderen Sektionen */
+  font-family: "Open Sauce One", sans-serif;
 }
 
 .copy-ip {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 2px 8px;
-    border-radius: 4px;
-    cursor: pointer; /* Zeigt die Hand beim Drüberfahren */
-    color: #23c483;  /* Deine grüne Akzentfarbe */
-    font-weight: bold;
-    transition: all 0.2s ease;
-    display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Zeigt die Hand beim Drüberfahren */
+  color: #23c483;
+  /* Deine grüne Akzentfarbe */
+  font-weight: bold;
+  transition: all 0.2s ease;
+  display: inline-block;
 }
 
 .copy-ip:hover {
-    background: rgba(35, 196, 131, 0.2);
-    transform: scale(1.05);
+  background: rgba(35, 196, 131, 0.2);
+  transform: scale(1.05);
 }
 
 .copy-ip:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 /* Die Haupt-Navbar */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #4a492f;
-    height: 90px;
-    padding: 0 40px;
-    position: sticky;
-    top: 0;
-    z-index: 10000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4a492f;
+  height: 90px;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Definition der drei Sektionen */
 .nav-section {
-    display: flex;
-    align-items: center;
-    flex: 1; /* Alle Sektionen sind gleich breit */
+  display: flex;
+  align-items: center;
+  flex: 1;
+  /* Alle Sektionen sind gleich breit */
 }
 
 .nav-section.left {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .nav-section.center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .nav-section.right {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 /* Logo Styling */
 .logo img {
-    height: 60px;
-    width: auto;
+  height: 60px;
+  width: auto;
 }
 
 /* Mittlere Links */
 .nav-links {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #eee6d8;
-    font-family: "Open Sauce One", sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    white-space: nowrap;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #eee6d8;
+  font-family: "Open Sauce One", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #23c483;
+  color: #23c483;
 }
 
 /* Spieler-Pille rechts */
 .player-count {
-    background: rgba(0, 0, 0, 0.4);
-    padding: 8px 16px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    cursor: pointer;
-    min-width: 150px;
-    transition: background 0.3s ease;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 8px 16px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  min-width: 150px;
+  transition: background 0.3s ease;
 }
 
 .player-count:hover {
-    background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .status-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 12px;
-    background-color: #777; /* Grau wenn offline */
-    flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 12px;
+  background-color: #777;
+  /* Grau wenn offline */
+  flex-shrink: 0;
 }
 
 .status-dot.online {
-    background-color: #23c483;
-    box-shadow: 0 0 10px #23c483;
+  background-color: #23c483;
+  box-shadow: 0 0 10px #23c483;
 }
 
 .player-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.1;
-    font-family: "Open Sauce One", sans-serif;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  font-family: "Open Sauce One", sans-serif;
 }
 
 .small-label {
-    font-size: 10px;
-    color: #eee6d8;
-    opacity: 0.7;
-    text-transform: uppercase;
+  font-size: 10px;
+  color: #eee6d8;
+  opacity: 0.7;
+  text-transform: uppercase;
 }
 
 #player-count-num {
-    font-size: 14px;
-    color: #23c483;
-    font-weight: bold;
+  font-size: 14px;
+  color: #23c483;
+  font-weight: bold;
 }
 
 
 /* Screenshots Section */
 .screenshots-section {
-    background: #6b6a45;
-    color: #eee6d8;
-    padding: 60px;
-    margin-top: 10px;
+  background: #6b6a45;
+  color: #eee6d8;
+  padding: 60px;
+  margin-top: 10px;
 }
 
 .überschrift {
@@ -570,24 +602,62 @@ body {
 }
 
 .überschrift h1 {
-    font-family: "Roca Two Bold", serif;
-    font-size: 40px;
-    line-height: 1.3;
-    margin-bottom: 40px;
-    text-align: center;
+  font-family: "Minecraft", serif;
+  font-size: 40px;
+  line-height: 1.3;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .überschrift p {
-    font-family: "Open Sauce One", serif;
-    font-size: 20px;
-    line-height: 1.3;
-    margin-bottom: 40px;
-    text-align: center;
+  font-family: "Open Sauce One", serif;
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .screenshots-section {
-    background: #6b6a45;
-    color: #eee6d8;
-    padding: 60px;
-    margin-top: 10px;
+  background: #6b6a45;
+  color: #eee6d8;
+  padding: 60px;
+  margin-top: 10px;
+}
+
+.casino {
+  background: #6b6a45;
+  color: #eee6d8;
+  padding: 60px;
+  margin-top: 10px;
+}
+
+.casino h1 {
+  font-family: "Minecraft", serif;
+  font-size: 40px;
+  line-height: 1.3;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Minecraft';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Minecraft'), url('https://fonts.cdnfonts.com/s/36662/MinecraftTen-VGORe.woff') format('woff');
+}
+
+
+.casino-bild {
+  background: #6b6a45;
+  color: #eee6d8;
+  padding: 60px;
+  margin-top: 10px;
+}
+
+.casino-bild-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
